@@ -1,0 +1,348 @@
+﻿body {
+    background-color: #000000;
+    font-family: sans-serif;
+}
+
+
+header {
+    margin-left: 25px;
+}
+
+    header h1 {
+        font-size: 30px;
+        color: #FFFFFF;
+    }
+
+    header p {
+        color: #FFFFFF;
+        font-size: 12px;
+    }
+
+    header img {
+        height: 110px;
+        margin:auto;
+    }
+
+nav {
+    margin-top:auto;
+    margin-bottom: 50px;
+}
+
+    nav h2 {
+        color: #FFFFFF;
+        padding-left: 60px;
+    }
+
+    nav p {
+        color: #FFFFFF;
+        font-size: 12px;
+        font-style: italic;
+        padding-left: 60px;
+    }
+
+ul {
+    margin-top:auto;
+    padding-left: 80px;
+}
+
+li {
+    margin-top:auto;
+    padding-bottom: 4px;
+}
+
+    li a {
+        color: #0D118B;
+        text-decoration: none;
+        font-size: 20px;
+        list-style: none;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+nav ul {
+    width: 100%;
+}
+
+    nav ul li {
+        float: left;
+        margin-right: 20px;
+        background-color: white;
+        border-radius: 8px;
+        list-style: none;
+        text-align: center;
+        width: 200px;
+        padding-top: 5px;
+    }
+
+nav:after {
+    clear: both;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+section h1 {
+    color: #FFFFFF;
+    font-size: 22px;
+    /* padding-left: 120px; */
+}
+
+section h2 {
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+section p {
+    color: #FFFFFF;
+    font-size: 14px;
+    width: 80%;
+    margin: 25px;
+    text-align: left;
+}
+
+section img {
+    width: 250px;
+    height: 250px;
+    border-color: #FFFFFF;
+    border-width: 8px;
+    border-style: solid;
+}
+
+.planets {
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    text-align: center;
+}
+
+.planet {
+    min-height: 700px;
+    vertical-align: top;
+    width: 80%;
+    margin: 0 auto;
+}
+
+    .planet p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+#main-content {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    /* width: 85%; */
+    margin: 60px 78px;
+    min-height: 400px;
+    padding-top: 10px;
+}
+
+    #main-content h2 {
+        padding: 14px;
+        color: black;
+    }
+
+    #main-content p {
+        color: black;
+    }
+
+.value {
+    color: green;
+    font-weight: bold;
+}
+
+label {
+    color: white;
+}
+
+form div {
+        padding: 10px 0px;
+    }
+
+        form div label {
+            width: 200px;
+            display: inline-block;
+            vertical-align: top;
+            padding-left: 20px;
+            color: black;
+        }
+
+    form button {
+        text-align: center;
+        margin-left: 224px;
+    }
+
+input[type=text], input[type=datetime], textarea {
+    width: 300px;
+}
+
+section.centeredPanel {
+    clear: both;
+    display: block;
+    width: 80%;
+    vertical-align: top;
+    
+    min-height: 450px;
+    background-color: #FFF;
+    border-radius: 7px;
+    margin-left: 60px;
+    margin-top: 60px;
+}
+
+section.centeredPanel h2 {
+    color: #000000; 
+    text-align: center;
+}
+.viewBackground {
+    background-color: white;
+}
+
+/*---------------------------------------------------------*/
+
+#index_individualPark{
+    border:solid;
+    border-color:black;
+}
+
+#index_parkImage{
+    margin-left:40%;
+}
+
+#index_parkName{
+    text-align:center;
+}
+#index_parkDesc{
+    text-align:center;
+    width:35%;
+     margin-left:30%;
+}
+.table tr td
+{
+    border:solid;
+    border-color:black;
+}
+.table{
+    width:60%;
+
+}
+#detail_parkImage
+{
+    float:left;
+}
+#detail_header{
+    text-align:center;
+    color:black;    
+}
+
+#weather_individualDay{
+    display:table-cell;
+    vertical-align:top;
+    border:solid;
+    border-color:darkgrey;
+    height:auto;
+    width:500px;
+    padding-bottom:10px
+}
+
+#weather_day{
+font-weight:bolder;
+font-size:25px;
+text-align:center;
+}
+
+#weather_container{
+display:table;
+width:100%;
+}
+
+.formSubmitButton
+{
+    background-color:lightgreen;
+    font-size: 20px;
+    font-weight:bold;
+    padding: 1px 16px;
+    border-radius:12px;
+    width:250px;
+   margin-left:35%;
+   margin-top:2%;
+ 
+}
+
+.formInputGroup
+{
+    padding-left:28%;
+    width:250px;
+    font-weight:bold;  
+    text-align:right;
+}
+#weather_Dayimage{
+    width:50%;
+    height:auto;
+    align-self:center !important;
+    margin-right:auto;
+    margin-left:20%;
+}
+#topForcast{
+    font-size:18px !important;
+    text-align:center;
+}
+
+#result_winner{
+    text-align:center;
+    margin:auto;
+    font-size:29px !important;
+}
+
+#surveyResult_parkImage{
+    display:block;
+    margin:auto;
+    border-radius:50%;
+    width:50%
+}
+#result_name_span{
+    font-weight:bold;
+}
+
+span.field-validation-error {
+    color: red;
+    font-weight: bold;
+    font-size:30px;
+}
+
+#submit_container{
+    background-color:antiquewhite;
+    position:absolute;
+    left:25%;
+    /*align-self:center;*/
+    display:block;
+    margin:auto;
+    max-width:50%;
+    height:30%;
+}
+
+    #submit_container div {
+        display:inline-block;
+        text-align:right;
+        margin:auto;
+       
+    }
+
+    #submit_parkCode{
+        margin-left:20% !important;
+    }
+
+    #detail_form{
+        display:inline-block;    
+    }
+    #detail_ParkName h1 {
+        color: black !important;
+        text-align:center;
+    }
+    #detail_ParkName{
+        display:inline-block;
+        vertical-align:top;
+        margin-left:2em;
+    }
+    #detail_top{
+    }

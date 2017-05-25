@@ -1,0 +1,40 @@
+﻿@using Capstone.Web.Models
+
+@model SurveyModel
+
+@{
+    ViewBag.Title = "Survey";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm("Submit", "Survey", FormMethod.Post))
+{
+    <div id="submit_container">
+        <div id="submit_parkCode">
+            @Html.DropDownListFor(m => m.ParkCode, SurveyModel.ParkCodes)
+            @Html.ValidationMessageFor(m => m.ParkCode)
+        </div>
+        <div id="submit_state" >
+            @Html.DropDownListFor(m => m.State,
+                new SelectList(Enum.GetValues(typeof(State))),
+                "Select State")
+            @Html.ValidationMessageFor(m => m.State)
+        </div>
+        <div id="submit_activity">
+            @Html.DropDownListFor(m => m.ActivityLevel, SurveyModel.ActivityLevels)
+            @Html.ValidationMessageFor(m => m.ActivityLevel)
+        </div>
+        <div>
+            @Html.Label("EmailAddress", "E-mail Address: ")
+            @Html.TextBoxFor(m => m.EmailAddress)
+            @Html.ValidationMessageFor(m => m.EmailAddress)
+        </div>
+
+        <button class="formSubmitButton">Submit Survey</button>
+    </div>
+}
+
+@*@Html.DropDownListFor(m => m.ParkCode,
+                new SelectList(Enum.GetValues(typeof(ParkCode))),
+                "Select ParkCode")
+@Html.ValidationMessageFor(m => m.ParkCode)*@
